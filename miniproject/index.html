@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Longest Common Subsequence</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Longest Common Subsequence</h1>
+    <form id="lcsForm">
+        <label for="firstString">Enter the first string:</label>
+        <input type="text" id="firstString" name="firstString" required><br><br>
+        <label for="secondString">Enter the second string:</label>
+        <input type="text" id="secondString" name="secondString" required><br><br>
+        <button type="submit">Find LCS</button>
+    </form>
+    <div id="lcsResult"></div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
