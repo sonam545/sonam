@@ -1,0 +1,41 @@
+caption {
+        color: blueviolet;
+        font-size: 50px;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+th {
+        color: black;
+        background-color: antiquewhite;
+}
+
+td {
+        color: brown;
+        text-align: center;
+}
+
+table {
+        background-color: #7fffd4;
+        border-collapse: collapse;
+}
+
+.odd-row {
+        background-color: black;
+}
+
+.even-row {
+        background-color: black;
+}
+#heading1{
+        color:black;
+}
+#heading2{
+        color: aqua;
+}
+div p{
+        color:chocolate;
+}
+mark:hover{
+        color:blue;
+}

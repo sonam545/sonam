@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="images/logo.jpg"
+            alt="E-Shop Logo"
+            style="width: 100px; height: auto"
+          />
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home Page -->
+    <header class="slider">
+      <div class="slider-item">
+        <img
+          src="images/slider1.jpg"
+          alt="Slide 1"
+          style="width: 100%; height: auto"
+        />
+        <h2>Welcome to E-Shop</h2>
+      </div>
+    </header>
+
+    <section class="categories">
+      <h2>Shop by Category</h2>
+      <div class="category-list">
+        <div class="category-item" data-category="Category 1">
+          <img
+            src="images/category1.jpg"
+            alt="Category 1"
+            style="width: 100%; height: auto; max-width: 200px"
+          />
+          <h3>Category 1</h3>
+        </div>
+        <div class="category-item" data-category="Category 2">
+          <img
+            src="images/category2.jpg"
+            alt="Category 2"
+            style="width: 100%; height: auto; max-width: 200px"
+          />
+          <h3>Category 2</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="latest-products">
+      <h2>Latest Products</h2>
+      <div class="product-list">
+        <div class="product-item" data-category="Category 1">
+          <img
+            src="images/product1.jpg"
+            alt="Product 1"
+            style="width: 100%; height: auto; max-width: 150px"
+          />
+          <h3>Product 1</h3>
+          <p>$10.00</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <h2>Features</h2>
+      <div class="feature-list">
+        <div class="feature-item">Free Shipping</div>
+        <div class="feature-item">24/7 Support</div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 E-Shop. All Rights Reserved.</p>
+    </footer>
+
+    <button id="scrollToTop">&#8593;</button>
+  </body>
+</html>

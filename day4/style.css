@@ -1,0 +1,10 @@
+.card{
+    background-color: blue;
+    border:2px solid blue;
+    
+}
+body{
+   
+    display:flex;
+    justify-content: center;
+}

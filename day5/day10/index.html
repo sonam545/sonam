@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/fav-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>eGrocery Store</title>
+    <script src="https://kit.fontawesome.com/feb8ec0fb5.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!--==Navigation================================-->
+    <nav class="navigation">
+      <!--logo-------->
+      <a href="index.html" class="logo"><i class="fa-solid fa-basket-shopping"></i> <span>TCET</span>Kirana </a>
+      <!--menu-btn---->
+      <input type="checkbox" class="menu-btn" id="menu-btn" />
+      <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon"></span>
+      </label>
+      <!--menu-------->
+      <ul class="menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#category">Categories</a></li>
+        <li><a href="#popular-bundle-pack">Our Packages</a></li>
+        <li><a href="#download-app">Our App</a></li>
+      </ul>
+      <!--right-nav-(cart-like)-->
+      <div class="right-nav">
+        <!--like----->
+        <a href="#" class="like">
+          <i class="far fa-heart"></i>
+          <span>0</span>
+        </a>
+        <!--cart----->
+        <a href="#" class="cart">
+          <i class="fas fa-shopping-cart"></i>
+          <span>0</span>
+        </a>
+      </div>
+    </nav>
+    <!--nav-end--------------------->
+    <!--==Search-banner=======================================-->
+    <section id="search-banner">
+      <!--bg--------->
+      <img src="D:\eGrocery\images/bg-1.png" class="bg-1" alt="bg" />
+      <img src="D:\eGrocery\images/bg-2.png" class="bg-2" alt="bg-2" />
+      <!--text------->
+      <div class="search-banner-text">
+        <h1>Order Your daily Groceries</h1>
+        <strong>#Free Delivery</strong>
+        <!--search-box------>
+        <form action="" class="search-box">
+          <!--icon------>
+          <i class="fas fa-search"></i>
+          <!--input----->
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search your daily groceries"
+            name="search"
+            required
+          />
+          <!--btn------->
+          <input type="submit" class="search-btn" value="Search" />
+        </form>
+      </div>
+    </section>
+    <!--search-banner-end--------------->
+    <!--==category=========================================-->
+    <section id="category">
+      <!--heading---------------->
+      <div class="category-heading">
+        <h2>Category</h2>
+        <span>All</span>
+      </div>
+      <!--box-container---------->
+      <div class="category-container">
+        <!--box---------------->
+        <a href="#" class="category-box">
+          <img src="https://t3.ftcdn.net/jpg/02/91/35/16/360_F_291351618_2ggRlHpK6pSwjUNtgMqhdaYliUYA5Jox.jpg" alt="Fish" />
+          <span>Fish & Meat</span>
+        </a>
+        <!--box---------------->
+        <a href="#" class="category-box">
+          <img src="https://thumbs.dreamstime.com/b/fresh-healthy-vegetables-white-background-assortment-42529651.jpg" alt="Fish" />
+          <span>Vegatbles</span>
+        </a>
+        <!--box---------------->
+        <a href="#" class="category-box">
+          <img src="https://tiimg.tistatic.com/fp/2/007/957/crocin-pain-relief-tablet--850.jpg" alt="Fish" />
+          <span>Medicine</span>
+        </a>
+        <!--box---------------->
+        <a href="#" class="category-box">
+          <img src="https://www.bigbasket.com/media/uploads/p/l/40129677-2_7-pampers-diaper-pants-extra-large.jpg" alt="Fish" />
+          <span>Baby</span>
+        </a>
+        <!--box---------------->
+        <a href="#" class="category-box">
+          <img src="https://m.media-amazon.com/images/I/71URNRQeicS._AC_UF894,1000_QL80_.jpg" alt="office" />
+          <span>Office</span>
+        </a>
+        <!--box---------------->
+        <a href="#" class="category-box">
+          <img src="https://m.media-amazon.com/images/I/61Sc0cjCmqL._AC_UF1000,1000_QL80_.jpg" alt="Fish" />
+          <span>Beauty</span>
+        </a>
+        <!--box---------------->
+        <a href="#" class="category-box">
+          <img src="https://rukminim2.flixcart.com/image/850/1000/kn4xhu80/garden-tool-set/9/i/g/combo-of-6-gardening-tools-watering-can-of-5-litre-spray-bottle-original-imagfv8uhcdpwzkf.jpeg?q=90" alt="Fish" />
+          <span>Gardening</span>
+        </a>
+      </div>
+    </section>
+    <!--category-end----------------------------------->
+    <!--==Products====================================-->
+    <section id="popular-product">
+      <!--heading----------->
+      <div class="product-heading">
+        <h3>Popular Product</h3>
+        <span>All</span>
+      </div>
+      <!--box-container------>
+      <div class="product-container">
+        <!--box---------->
+        <div class="product-box">
+          <img src="https://doorkisan.com/wp-content/uploads/2020/11/197290-01.jpg" alt="apple" />
+          <strong>Apple</strong>
+          <span class="quantity">1 KG</span>
+          <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>195</span>
+          <!--cart-btn------->
+          <a href="#" class="cart-btn">
+            <i class="fas fa-shopping-bag"></i> Add Cart
+          </a>
+          <!--like-btn------->
+          <a href="#" class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img src="https://seed2plant.in/cdn/shop/products/biggreenchilliseeds.jpg?v=1606738066" alt="chili" />
+          <strong>Chili</strong>
+          <span class="quantity">200 gm</span>
+          <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>20</span>
+          <!--cart-btn------->
+          <a href="#" class="cart-btn">
+            <i class="fas fa-shopping-bag"></i> Add Cart
+          </a>
+          <!--like-btn------->
+          <a href="#" class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img src="https://m.media-amazon.com/images/I/51nmk1rcYGL._AC_UF1000,1000_QL80_.jpg" alt="onion" />
+          <strong>Onion</strong>
+          <span class="quantity">1 KG</span>
+          <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>40</span>
+          <!--cart-btn------->
+          <a href="#" class="cart-btn">
+            <i class="fas fa-shopping-bag"></i> Add Cart
+          </a>
+          <!--like-btn------->
+          <a href="#" class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img src="https://www.jiomart.com/images/product/original/590000090/potato-1-kg-product-images-o590000090-p590000090-0-202207291750.jpg?im=Resize=(1000,1000)" alt="potato" />
+          <strong>Patato</strong>
+          <span class="quantity">1 KG</span>
+          <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>32</span>
+          <!--cart-btn------->
+          <a href="#" class="cart-btn">
+            <i class="fas fa-shopping-bag"></i> Add Cart
+          </a>
+          <!--like-btn------->
+          <a href="#" class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Pitaya_cross_section_ed2.jpg" alt="dragon fruit" />
+          <strong>Dragon Fruit</strong>
+          <span class="quantity">1 Piece</span>
+          <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>100</span>
+          <!--cart-btn------->
+          <a href="#" class="cart-btn">
+            <i class="fas fa-shopping-bag"></i> Add Cart
+          </a>
+          <!--like-btn------->
+          <a href="#" class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img src="https://www.jiomart.com/images/product/original/590001297/pears-babugosha-1-kg-product-images-o590001297-p590362490-0-202203170320.jpg?im=Resize=(420,420)" alt="pears" />
+          <strong>Pears</strong>
+          <span class="quantity">1 KG</span>
+          <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>150</span>
+          <!--cart-btn------->
+          <a href="#" class="cart-btn">
+            <i class="fas fa-shopping-bag"></i> Add Cart
+          </a>
+          <!--like-btn------->
+          <a href="#" class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--popular-product-end--------------------->
+    <!--Popular-bundle-pack===================================-->
+    <section id="popular-bundle-pack">
+      <!--heading-------------->
+      <div class="product-heading">
+        <h3>Popular Bundle Pack</h3>
+      </div>
+      <!--box-container------>
+      <div class="product-container">
+        <!--box---------->
+        <div class="product-box">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWw232yrKX0hhBu_jI8Qr9TYcshPdPGjoKWQ&usqp=CAU" alt="pack1" />
+          <strong>Big Pack</strong>
+          <span class="quantity">Lemone, Tamato, Patato,+4</span>
+          <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>256</span>
+          <!--cart-btn------->
+          <a href="#" class="cart-btn">
+            <i class="fas fa-shopping-bag"></i> Add Cart
+          </a>
+          <!--like-btn------->
+          <a href="#" class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img src="https://img.freepik.com/premium-photo/watercolor-fruits-apple-pomegranate-papaya-white-background_804621-4.jpg?w=360" alt="pack2" />
+          <strong>Combo Pack</strong>
+          <span class="quantity">Apple,papaya +1</span>
+          <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>485</span>
+          <!--cart-btn------->
+          <a href="#" class="cart-btn">
+            <i class="fas fa-shopping-bag"></i> Add Cart
+          </a>
+          <!--like-btn------->
+          <a href="#" class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img src="https://m.media-amazon.com/images/I/71UO6eXC1QL.jpg" alt="rice" />
+          <strong> Dawat Rice</strong>
+          <span class="quantity">10 KG</span>
+          <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>450</span>
+          <!--cart-btn------->
+          <a href="#" class="cart-btn">
+            <i class="fas fa-shopping-bag"></i> Add Cart
+          </a>
+          <!--like-btn------->
+          <a href="#" class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img src="https://www.jiomart.com/images/product/original/491491451/tata-sampann-organic-moong-dal-500-g-product-images-o491491451-p590032532-0-202203150707.jpg?im=Resize=(1000,1000)" alt="daal" />
+          <strong>Moong Dal</strong>
+          <span class="quantity">2 KG</span>
+          <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>300</span>
+          <!--cart-btn------->
+          <a href="#" class="cart-btn">
+            <i class="fas fa-shopping-bag"></i> Add Cart
+          </a>
+          <!--like-btn------->
+          <a href="#" class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img src="https://ik.imagekit.io/dunzo/84d616600ffc11edba34ece1da932cd0_PRODUCT_5bc87ae10d298a283c296e1f_1.jpg" alt="butter" />
+          <strong>Amul Butter</strong>
+          <span class="quantity">400gm</span>
+          <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>200</span>
+          <!--cart-btn------->
+          <a href="#" class="cart-btn">
+            <i class="fas fa-shopping-bag"></i> Add Cart
+          </a>
+          <!--like-btn------->
+          <a href="#" class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img src="https://www.bigbasket.com/media/uploads/p/l/40132145_6-fortune-oil-grounutt-activ.jpg" alt="oil" />
+          <strong>Ground Nut oil</strong>
+          <span class="quantity">5 Litres</span>
+          <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>1000</span>
+          <!--cart-btn------->
+          <a href="#" class="cart-btn">
+            <i class="fas fa-shopping-bag"></i> Add Cart
+          </a>
+          <!--like-btn------->
+          <a href="#" class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--popular-bundle-pack-end-------------------------------->
+    <!--==Clients===============================================-->
+    <section id="clients">
+      <!--heading---------------->
+      <div class="client-heading">
+        <h3>What Our Client's Say</h3>
+      </div>
+      <!--box-container---------->
+      <div class="client-box-container">
+        <!--box------------->
+        <div class="client-box">
+          <!--==profile===-->
+          <div class="client-profile">
+            <!--img--->
+            <img src="https://static.vecteezy.com/system/resources/previews/009/116/299/original/ceo-logo-ceo-letter-ceo-letter-logo-design-initials-ceo-logo-linked-with-circle-and-uppercase-monogram-logo-ceo-typography-for-technology-business-and-real-estate-brand-vector.jpg" alt="client" />
+            <!--text-->
+            <div class="profile-text">
+              <strong>Diwas Tiwari</strong>
+              <span>CEO</span>
+            </div>
+          </div>
+          <!--==Rating======-->
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <!--==comments===-->
+          <p>
+            product quality is dam amazing same as delivery service.Products are
+            available at very reasonable price on this site.
+            <i class="fa-solid fa-thumbs-up" style="color: #e6ea1a;"></i>
+            <i class="fa-solid fa-thumbs-up" style="color: #e6ea1a;"></i>
+            <i class="fa-solid fa-thumbs-up" style="color: #e6ea1a;"></i>
+          </p>
+        </div>
+        <!--box------------->
+        <div class="client-box">
+          <!--==profile===-->
+          <div class="client-profile">
+            <!--img--->
+            <img src="https://cdn.shopify.com/s/files/1/0279/3963/5248/files/software-development-logo.svg?528" alt="client" />
+            <!--text-->
+            <div class="profile-text">
+              <strong> Sashank </strong>
+              <span>Software Developer</span>
+            </div>
+          </div>
+          <!--==Rating======-->
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <!--==comments===-->
+          <p>
+            Tata products all are is good. But I am not eating chane
+             ki daal other family members eating and telling me is good
+              taste of daal tata company others products also just like
+               tea masala and tata salt no1.salt thank you so much flipkart
+                online shop for given me good service everytime .Thanks again.
+          </p>
+        </div>
+        <!--box------------->
+        <div class="client-box">
+          <!--==profile===-->
+          <div class="client-profile">
+            <!--img--->
+            <img src="https://vowels.ae/blog/wp-content/uploads/2022/07/digital-marketing-logo-design.jpg" alt="client" />
+            <!--text-->
+            <div class="profile-text">
+              <strong> Sachin</strong>
+              <span>Marketer</span>
+            </div>
+          </div>
+          <!--==Rating======-->
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <!--==comments===-->
+          <p>
+          I had received my fruits within 13 minutes of odering 
+          and the quality is very good.<br>
+          Thanks for such an amazing services.<i class="fa-solid fa-thumbs-up" style="color: #e6ea1a;"></i>
+          <i class="fa-solid fa-thumbs-up" style="color: #e6ea1a;"></i>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--client-section-end---------->
+    <!--==Partnre-logo================================-->
+    <section id="partner">
+      <!--heading------------>
+      <div class="partner-heading">
+        <h3>Our Trusted Partner</h3>
+      </div>
+      <!--logo-container----->
+      <div class="logo-container">
+        <img src="https://deliveryjobs.vahan.co/wp-content/uploads/2021/06/Dunzo_Logo.jpg" alt="logo" />
+        <img src="https://images.yourstory.com/cs/2/220356402d6d11e9aa979329348d4c3e/Flipkart-1582211499554.jpg?w=1152&fm=auto&ar=2:1&mode=crop&crop=faces" alt="logo" />
+        <img src="https://pbs.twimg.com/media/Fa0iPY6aIAInNyT.png" alt="logo" />
+        <img src="https://m.media-amazon.com/images/G/01/omaha/images/merch/2019/Banyan/Email/f3vx-1400-AmazonFresh_Logo.png" alt="logo" />
+      </div>
+    </section>
+    <!--logo-section-end--------------------->
+    <!--==download-app====================================-->
+    <section id="download-app">
+      <!--img----------------------->
+      <div class="app-img">
+        <img src="https://www.icoderzsolutions.com/image/customer-app-groc.webp" alt="app img" />
+      </div>
+      <!--text---------------------->
+      <div class="download-app-text">
+        <strong>Download App</strong>
+        <p>
+        Download our App for better experience and grab the Deals, Exciting offers & vouchers.
+        Free delivery on the first 2 orders made from our app.
+        </p>
+        <!--btns------->
+        <div class="download-btns">
+          <a href="#"><img src="https://w7.pngwing.com/pngs/91/37/png-transparent-google-play-android-app-store-android-text-logo-microsoft-store.png" alt="xyz" /></a>
+          <a href="#"><img src="https://www.citypng.com/public/uploads/preview/free-available-on-the-app-store-apple-button-png-11639742555i7lifwrl0p.png?v=2023071604" alt="zyx" /></a>
+        </div>
+      </div>
+    </section>
+    <!--download-app-section-end------------------------->
+    <!--==Footer=============================================-->
+    <footer>
+      <div class="footer-container">
+        <!--logo-container------>
+        <div class="footer-logo">
+          <a href="#"><span>TCET</span>kirana</a>
+          <!--social----->
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <!--links------------------------->
+        <div class="footer-links">
+          <strong>Product</strong>
+          <ul>
+            <li><a href="#">Clothes</a></li>
+            <li><a href="#">Packages</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">New</a></li>
+          </ul>
+        </div>
+        <!--links------------------------->
+        <div class="footer-links">
+          <strong>Category</strong>
+          <ul>
+            <li><a href="#">Beauty</a></li>
+            <li><a href="#">Meats</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Clothes</a></li>
+          </ul>
+        </div>
+        <!--links-------------------------->
+        <div class="footer-links">
+          <strong>Contact</strong>
+          <ul>
+            <li><a href="#">Phone : +123456789</a></li>
+            <li><a href="#">Email : Example@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+

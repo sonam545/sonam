@@ -1,0 +1,394 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+button {
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a {
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.nav-links li a:hover {
+  background-color: #575757;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  background-color: #007bff;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+/* Section Styles */
+section {
+  padding: 20px;
+}
+
+.categories,
+.features,
+.about,
+.contact,
+.cart,
+.products {
+  text-align: center;
+}
+
+.categories .category-list,
+.features .feature-list,
+.products .product-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.item {
+  background-color: #fff;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: transform 0.3s;
+  width: 200px;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.item h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.item p {
+  font-size: 1em;
+}
+
+/* Forms */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-size: 16px;
+}
+
+form input,
+form textarea,
+form select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+form button {
+  padding: 10px 15px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+/* Products Page */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.filters select,
+.filters input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* About Page */
+.about p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.testimonials {
+  margin-top: 30px;
+  font-style: italic;
+}
+
+/* Contact Page */
+.contact-info {
+  margin-bottom: 30px;
+}
+
+.contact .contact-info h2 {
+  margin-bottom: 10px;
+}
+
+.contact form {
+  text-align: left;
+}
+
+/* Cart Page */
+.cart-items {
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.cart-item img {
+  width: 80px;
+  height: auto;
+}
+
+.cart-item p {
+  margin: 0;
+  flex: 1;
+  text-align: center;
+}
+
+.total {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.cart button {
+  margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Scroll to Top */
+#scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5em;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#scrollToTop:hover {
+  background-color: #0056b3;
+}
+
+body.scrolled #scrollToTop {
+  display: flex;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .categories .item,
+  .features .item,
+  .products .item {
+    width: 100%;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+}
+/* Latest Products Section */
+.latest-products {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+  /* Light background for better visibility */
+}
+
+.latest-products h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.latest-products .product-list {
+  display: flex;
+  justify-content: center;
+  /* Centers the content horizontally */
+  flex-wrap: wrap;
+  gap: 20px;
+  /* Adds space between items */
+}
+
+.latest-products .product-item {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  width: 300px;
+  /* Fixed width for uniformity */
+  transition: transform 0.3s ease-in-out;
+}
+
+.latest-products .product-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.latest-products .product-item h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.latest-products .product-item p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.latest-products .product-item button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.latest-products .product-item button:hover {
+  background-color: #0056b3;
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 768px) {
+  .latest-products .product-item {
+    width: 100%;
+    /* Full width for mobile devices */
+  }
+}

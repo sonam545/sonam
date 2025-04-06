@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="demo()">Submit</button><br>
+    <p id="output"></p>
+    <script>
+        //const x=10;
+        //var x=10;
+        function demo(){
+            // let x=10;
+            // document.getElementById("output").innerHTML=x;
+            // x=20;
+            // document.getElementById("output").innerHTML+=x;
+
+            // let marks=67
+            // if(marks>=70){
+            //     document.getElementById("output").innerHTML="Pass";
+            // }
+            // else if(marks>=0 && marks<70){
+            //     document.getElementById("output").innerHTML="Fail";
+            // }
+            // else{
+            //     document.getElementById("output").innerHTML="Invalid";
+            // }
+
+            // let day=1;
+            // switch(day)
+            // {
+            //     case 1: document.getElementById("output").innerHTML="Monday";
+            //     break;
+            //     case 2: document.getElementById("output").innerHTML="Tuesday";
+            //     break;
+            //     case 3: document.getElementById("output").innerHTML="Wednesday";
+            //     break;
+            //     case 4: document.getElementById("output").innerHTML="Thursday";
+            //     break;
+            //     case 5: document.getElementById("output").innerHTML="Friday";
+            //     break;
+            //     case 6: document.getElementById("output").innerHTML="Saturday";
+            //     break;
+            //     case 7: document.getElementById("output").innerHTML="Sunday";
+            //     break;
+            //     default:document.getElementById("output").innerHTML="Invalid";
+            // }
+            let x=["Apple","Mango","Banana"]
+            // let i=0;
+            // do
+            // {
+            //     document.getElementById("output").innerHTML+=x[i]+"<br>";
+            //     i++;
+            //  } while(i<x.length);
+
+            // for(i=0;i<x.length;i++)
+            // {
+            //     document.getElementById("output").innerHTML+=x[i]+"<br>";
+            // }
+
+            // for(let i in x)
+            // {
+            //     document.getElementById("output").innerHTML+=x[i]+"<br>";
+            // }
+
+            // for(let i of x)
+            // {
+            //     document.getElementById("output").innerHTML+=i+"<br>";
+            // }
+
+            x.foreach(element=>
+            {
+                document.getElementById("output").innerHTML+=element+"<br>";
+            })
+
+        }
+
+                
+    </script>
+</body>
+</html>

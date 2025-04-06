@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            font-size: 100px;
+            color:blue;
+        }
+
+        img {
+            clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+        }
+
+        img:hover {
+            opacity: 0.6;
+        }
+
+        @media only screen and (max-width: 600px) {
+            img {
+                clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+            }
+
+            p {
+                font-size: 50px;
+                color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>Hello</p>
+    <br>
+    <img src="https://picsum.photos/150" alt="">
+</body>
+</html>
